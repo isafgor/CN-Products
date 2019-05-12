@@ -38,7 +38,6 @@ p {
 
 .container {
     padding: 0 20px;
-    /* width: 1344px; */
 }
 
 .header {
@@ -68,10 +67,12 @@ p {
     padding: 20px 50px;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
+    transition: 0.5s;
+    background: transparent;
 }
 
 .header__logo {
@@ -116,6 +117,7 @@ p {
     padding: 10px;
     border: 2px solid #fed136;
     transition: 0.5s;
+    border-radius: 4px;
 }
 
 .header__down:hover {
@@ -123,7 +125,7 @@ p {
 }
 
 .main {
-    margin: 75px 0;
+    margin-top: 75px;
 }
 
 .tools__headline {
@@ -169,6 +171,81 @@ p {
     max-width: 65%;
     text-align: center;
 }
+
+.order {
+    padding-top: 75px;
+    min-height: 400px;
+    position: relative;
+    background: url('../images/world.jpg') 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+}
+
+.order:before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.order__headline {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.order__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.order__form input,
+.order__form textarea {
+    max-width: 700px;
+    min-width: 500px;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.order__form textarea {
+    resize: none;
+}
+
+.order__button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #efbb0a;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.order__button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
 
 .footer {
     display: flex;

@@ -10,7 +10,7 @@
     <body>
         <header class="header">
             <div class="container">
-                <nav class="header__navigation">
+                <nav id="navigation" class="header__navigation">
                     <div class="header__logo">
                         CN Products
                     </div>
@@ -48,7 +48,9 @@
                     <h1 class="tools__headline">
                             Инструменты
                     </h1>
-                    <h2 class="tools__headline">Что мы используем в наших работах.</h2>
+                    <h2 class="tools__headline">
+                        Что мы используем в наших работах.
+                    </h2>
                     <div class="tools__kit">
                         <div class="tools__item">
                             <span class="tools__icon">
@@ -96,7 +98,7 @@
                         </div>
                         <div class="tools__item">
                             <span class="tools__icon">
-                                <i class="fas fa-stopwatch"></i>
+                                <i class="fab fa-bootstrap"></i>
                             </span>
                             <h3 class="tools__name">
                                 Bootstrap 3, Bootstrap 4, Bulma
@@ -116,7 +118,34 @@
                                 Python создаст функционал вашего сайта, от обработчиков до сложных систем управления контентом.
                             </p>
                         </div>
+                        <div class="tools__item">
+                            <span class="tools__icon">
+                                <i class="fab fa-yandex-international"></i>
+                            </span>
+                            <h3 class="tools__name">
+                                Методология БЭМ
+                            </h3>
+                            <p class="tools__description">
+                                Методология БЭМ создана для разработки сайтов, которые надо делать быстро,а поддерживать долгие годы. Она позволяет создавать расширяемые и повторно используемые компоненты интерфейса.
+                            </p>
+                        </div>
                     </div>
+                </div>
+            </section>
+            <section id="order" class="order">
+                <div class="container">
+                    <h1 class="order__headline">
+                        Свяжитесь с нами
+                    </h1>
+                    <h2 class="order__headline">
+                        У вас есть идея, готовый проект или вопросы? Напишите нам!
+                    </h2>
+                    <form class="order__form">
+                        <input type="text" placeholder="Ваше имя*" required/>
+                        <input type="text" placeholder="Ваш email*" required/>
+                        <textarea rows="8" placeholder="Ваше сообщение*"></textarea>
+                        <button type="button" class="order__button">Отправить</button>
+                    </form>
                 </div>
             </section>
         </main>
@@ -127,6 +156,6 @@
         </footer>
 
 
-        <script src="script/main.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
 </html>
